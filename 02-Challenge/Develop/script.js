@@ -4,7 +4,7 @@ var generateBtn = document.querySelector("#generate");
 const upper = 'ABCDEFGHIJKLMONOPQRSTUVWXYZ';
 const lower = 'abcdefghijklmnopqrstuvwxyz';
 const number = '1234567890';
-const special = '!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~';
+const special = `!"#$%&'()*+,-./:;<=>?@[\]^_{|}~`;
 
 
 
