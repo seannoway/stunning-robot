@@ -1,10 +1,12 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+//sets variables for the password generator to access
+var upper = 'ABCDEFGHIJKLMONOPQRSTUVWXYZ';
+var lower = 'abcdefghijklmnopqrstuvwxyz';
+var number = '1234567890';
+var special = `!"#$%&'()*+,-./:;<=>?@[\]^_{|}~`;
 
-const upper = 'ABCDEFGHIJKLMONOPQRSTUVWXYZ';
-const lower = 'abcdefghijklmnopqrstuvwxyz';
-const number = '1234567890';
-const special = `!"#$%&'()*+,-./:;<=>?@[\]^_{|}~`;
+
 
 
 
