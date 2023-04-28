@@ -11,7 +11,7 @@ After selecting the desired character categories, the generator produces a rando
 4. The generator will produce a new string of characters each time you click the "Generate" button, ensuring unique and secure results.
 
 ## Application Screenshot
-(/assets/images/screenshot.png)
+(assets/images/screenshot.png)
 
 ## Deployed URL
 (https://seannoway.github.io/stunning-robot/)
