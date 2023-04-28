@@ -33,7 +33,7 @@ function charAmount() {
     }
   };
 
-  function generatePassword() {
+  
    
     }};
 
@@ -45,14 +45,30 @@ function charAmount() {
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  var correctPrompts = getPrompts(); // calls the get prompt function inside the write password function
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
-
+  if(correctPrompts){ //only generates password if the promts are inputted correctly
+  var newPassword = generatePassword();
+  passwordText.value = newPassword;
+} else {
+  passwordTest.value = "";
+}
 }
 
+function generatePassword() { 
+  var password = "";
+  for(var i =0; i < characterLength; i++) {
+    var randomPass = Math.floor(Math.random() * passArr.length);
+    password = password + passArr[randomPass];
+  }
+  return password;
+  }
+
 function getPrompts(){
+
+  passArr = [];
+
   characterLength = parseInt(prompt("How many characters would you like your character to be? (8-128 character)"));
   if(isNan(characterLength) || characterLength < 8 || characterLength > 128) {
     alert("Character length must be a number between 8 and 128 digits. Please try again.");
@@ -71,5 +87,6 @@ function getPrompts(){
   if(confirm("Would you like numbers in your password?")) {
     passArr = passArr.concat(number);  
 }
+};
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
