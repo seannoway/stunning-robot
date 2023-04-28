@@ -9,11 +9,11 @@ var specialChar = ['!','"','@','#','$','%','&','`','(',')','+','*','/','>','=','
 var lowerCase = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',];
 var upperCase = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',];
 var number = ['1','2','3','4','5','6','7','8','9','0',];
-var upper = 'ABCDEFGHIJKLMONOPQRSTUVWXYZ';
-var lower = 'abcdefghijklmnopqrstuvwxyz';
-var number = '1234567890';
-var special = `!"#$%&'()*+,-./:;<=>?@[\]^_{|}~`;
-var password = "";
+// var upper = 'ABCDEFGHIJKLMONOPQRSTUVWXYZ';
+// var lower = 'abcdefghijklmnopqrstuvwxyz';
+// var number = '1234567890';
+// var special = `!"#$%&'()*+,-./:;<=>?@[\]^_{|}~`;
+// var password = "";
 
 //defines a function that prompts the uder to select a character amount in the window between 8 and 128
 function charAmount() {
@@ -67,7 +67,9 @@ function getPrompts(){
   }
   if(confirm("Would you like special characters in your password?")) {
     passArr = passArr.concat(specialChar);
-  }  
+  }
+  if(confirm("Would you like numbers in your password?")) {
+    passArr = passArr.concat(number);  
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
