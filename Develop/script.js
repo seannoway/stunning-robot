@@ -1,17 +1,17 @@
-// Assignment Code
-
-
 //sets variables for the password generator to access
 var characterLength = 8;
 var passArr = [];
 
+// sets array for the random generator to pull from
 var specialChar = ['!', '"', '@', '#', '$', '%', '&', '`', '(', ')', '+', '*', '/', '>', '=', '<', '?', '~', '{', '}',];
 var lowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',];
 var upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',];
 var number = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0',];
 
+// links generate button to the HTML page
 var generateBtn = document.querySelector("#generate");
 
+// makes generate button click-able and adds write password function
 generateBtn.addEventListener("click", writePassword);
 
 // Write password to the #password input
@@ -27,6 +27,7 @@ function writePassword() {
   }
 }
 
+//generates random password
 function generatePassword() {
   var password = "";
   for (var i = 0; i < characterLength; i++) {
@@ -36,6 +37,7 @@ function generatePassword() {
   return password;
 }
 
+//sets prompts for the random password generator and us used in the write password function
 function getPrompts() {
   passArr = [];
   characterLength = parseInt(prompt("How many characters would you like your password to be? (8-128 characters)"));
@@ -58,5 +60,3 @@ function getPrompts() {
   }
   return true;
 }
-// Add event listener to generate button
-
