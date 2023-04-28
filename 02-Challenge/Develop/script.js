@@ -58,6 +58,10 @@ function getPrompts(){
     alert("Character length must be a number between 8 and 128 digits. Please try again.");
     return false;
   }
+
+  if (confirm("would you like lowercase letters in your password?")) {
+    passArr = passArr.concat(lowerCase);
+  }
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
