@@ -2,6 +2,13 @@
 var generateBtn = document.querySelector("#generate");
 
 //sets variables for the password generator to access
+var characterLength = 8;
+var passArr = [];
+
+var specialChar = ['!','"','@','#','$','%','&','`','(',')','+','*','/','>','=','<','?','~','{','}',];
+var lowerCase = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',];
+var upperCase = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',];
+var number = ['1','2','3','4','5','6','7','8','9','0',];
 var upper = 'ABCDEFGHIJKLMONOPQRSTUVWXYZ';
 var lower = 'abcdefghijklmnopqrstuvwxyz';
 var number = '1234567890';
@@ -12,7 +19,7 @@ var password = "";
 function charAmount() {
   result = parseInt(window.prompt('Please enter a character amount'));
 // checks to see if the number selected is between 8 and 128
-  if (!Number.isInteger(result) || result <= 7 || result >= 129) {
+  if (!Number.isInteger(result) || result <= 8 || result >= 128) {
     window.alert('Please enter a number beween 8 and 128');
     return charAmount();
   } else {
@@ -25,6 +32,10 @@ function charAmount() {
       return true;
     }
   };
+
+  function generatePassword() {
+   
+    }};
 
 
 
