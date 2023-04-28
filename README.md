@@ -11,8 +11,10 @@ After selecting the desired character categories, the generator produces a rando
 4. The generator will produce a new string of characters each time you click the "Generate" button, ensuring unique and secure results.
 
 ## Application Screenshot
-[Screenshot](assets/03-javascript-homework-demo.png)
+(/assets/images/screenshot.png)
 
+## Deployed URL
+(https://seannoway.github.io/stunning-robot/)
 
 ## Technolgies Used
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
