@@ -52,5 +52,12 @@ function writePassword() {
 
 }
 
+function getPrompts(){
+  characterLength = parseInt(prompt("How many characters would you like your character to be? (8-128 character)"));
+  if(isNan(characterLength) || characterLength < 8 || characterLength > 128) {
+    alert("Character length must be a number between 8 and 128 digits. Please try again.");
+    return false;
+  }
+}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
