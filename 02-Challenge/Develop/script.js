@@ -65,6 +65,9 @@ function getPrompts(){
   if(confirm("Would you like uppcase letters in your password?")) {
     passArr = passArr.concat(upperCase);
   }
+  if(confirm("Would you like special characters in your password?")) {
+    passArr = passArr.concat(specialChar);
+  }  
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
